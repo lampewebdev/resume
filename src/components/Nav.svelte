@@ -3,12 +3,21 @@
 </script>
 
 <nav>
-	<ul>
-		<li><a class='{segment === undefined ? "selected" : ""}' href='.'>home</a></li>
-		<li><a class='{segment === "about" ? "selected" : ""}' href='about'>about</a></li>
-
-		<!-- for the blog link, we're using rel=prefetch so that Sapper prefetches
-		     the blog data when we hover over the link or tap it on a touchscreen -->
-		<li><a rel=prefetch class='{segment === "blog" ? "selected" : ""}' href='blog'>blog</a></li>
+	<ul class="flex border-b">
+		<li class="-mb-px mr-1">
+			<a class='
+				bg-white inline-block border-l border-t border-r rounded-t py-2 px-4  font-semibold
+				{segment === undefined ? "text-blue-700" : "text-blue-800"}'
+				href="#">Home</a>
+		</li>
+		<li class="mr-1">
+			<a class="bg-white inline-block py-2 px-4 text-blue-500 hover:text-blue-800 font-semibold" href="#">Tab</a>
+		</li>
+		<li class="mr-1">
+			<a class="bg-white inline-block py-2 px-4 text-blue-500 hover:text-blue-800 font-semibold" href="#">Tab</a>
+		</li>
+		<li class="mr-1">
+			<a class="bg-white inline-block py-2 px-4 text-gray-400 font-semibold" href="#">Tab</a>
+		</li>
 	</ul>
 </nav>
