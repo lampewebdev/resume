@@ -5,7 +5,6 @@
 
     .profile {
         font-size: 20px;
-        margin-top: 11px;
         font-weight: 700;
         text-transform: uppercase;
         background: #fafafa;
@@ -121,13 +120,13 @@
     }
 </style>
 
-<div class="container mx-auto md:ml-3 max-w-lg shadow-xl m-6 rounded">
+<div class="container shadow-xl">
     <div class="profile p-2">
         <div>Michael Lazarski</div>
         <div class="job">Web Developer</div>
     </div>
 
-    <img class="profile-picture object-cover" src="profile.jpg" alt="profile picture" />
+    <img class="profile-picture mx-auto" src="profile.jpg" alt="profile picture" />
 
     <ul class="profile-information">
         <li />
@@ -164,7 +163,7 @@
 
     </ul>
     <div class="text-center">
-        <button class="bg-yellow-500 hover:bg-yellow-700 text-black font-bold py-2 px-4 m-4 rounded">
+        <button class="bg-accent hover:bg-accent-hover text-black font-bold py-2 px-4 m-4 rounded">
             Download Cv
             <i class="fas fa-download"></i>
         </button>
